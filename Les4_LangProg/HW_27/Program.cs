@@ -5,13 +5,13 @@
 }
 void SumDigits(int n)
 {
-    int s=0;
-    while (n>0)
+    int s = 0;
+    while (n > 0)
     {
-        s+=n%10;
-        n/=10;
+        s += n % 10;
+        n /= 10;
     }
     Console.WriteLine($"-> {s}");
-    
+
 }
 SumDigits(Insert());

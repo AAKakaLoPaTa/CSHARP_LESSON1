@@ -13,7 +13,10 @@ int[] GenArray(int count, int min, int max)
     }
     return arr;
 }
-void PrintArray(int[] arr) {
+void PrintArray(int[] arr)
+{
     Console.WriteLine($"Сгенерированный массив чисел -> [{String.Join(",", arr)}]");
 }
-PrintArray(GenArray(Insert("Введите количество элементов массива: "),Insert("Введите минимальное значение элемента массива: "),Insert("Введите максимальное значение элемента массива: ")));
+PrintArray(GenArray(Insert("Введите количество элементов массива: "), 
+Insert("Введите минимальное значение элемента массива: "), 
+Insert("Введите максимальное значение элемента массива: ")));
