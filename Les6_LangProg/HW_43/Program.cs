@@ -19,5 +19,8 @@ double k1 = Insert("Введите k1: ");
 double b2 = Insert("Введите b2: ");
 double k2 = Insert("Введите k2: ");
 double[] p = Peres(b1, k1, b2, k2);
-if (p[1] != p[2]) {Console.WriteLine($"Прямые параллельны");}
+if (k1 == k2) {
+    if (b1 == b2) Console.WriteLine($"Прямые совпадают");
+    else Console.WriteLine($"Прямые параллельны");
+    }
 else {Console.WriteLine($"b1 = {b1}, k1 = {k1}, b2 = {b2}, k2 = {k2} -> ({p[0]}; {p[1]})");}
