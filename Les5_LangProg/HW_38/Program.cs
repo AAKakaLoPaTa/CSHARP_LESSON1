@@ -42,4 +42,4 @@ double[] TakeMinMaxDiff(double[] array)
 }
 
 double[] a = GetArrayRandom(Insert("Введите количество элементов массива: "));
-Console.Write($"{ArrayToStr(a)} -> {TakeMinMaxDiff(a)[0]} - {TakeMinMaxDiff(a)[1]} = {TakeMinMaxDiff(a)[2]}");
+Console.Write($"{ArrayToStr(a)} => {TakeMinMaxDiff(a)[0]} - {TakeMinMaxDiff(a)[1]} = {TakeMinMaxDiff(a)[2]}");
