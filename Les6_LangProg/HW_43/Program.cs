@@ -5,6 +5,7 @@ double Insert(string s)
     Console.Write(s);
     return Convert.ToInt32(Console.ReadLine());
 }
+
 double[] Peres(double b1, double k1, double b2, double k2)
 {
     double[] array = new double[3];
@@ -13,6 +14,7 @@ double[] Peres(double b1, double k1, double b2, double k2)
     array[2] = k2 * array[0] + b2;
     return array;
 }
+
 // Не учел возможность параллельности прямых - проверять равность двух уравнений нужно!
 double b1 = Insert("Введите b1: ");
 double k1 = Insert("Введите k1: ");
