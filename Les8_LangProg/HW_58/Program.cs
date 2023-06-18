@@ -37,17 +37,6 @@ void PrintArray(double[,] arr)
         Console.WriteLine("\t]");
     }
 }
-string PrintStringArray(double[,] arr, int n)
-{
-    string s = "[";
-    for (int j = 0; j < arr.GetLength(1); j++) //столбцы
-    {
-        s += "\t" + arr[n, j];
-        if (j < arr.GetLength(1) - 1) { s += ","; }
-    }
-    s += "\t]";
-    return s;
-}
 
 double[,] Mult2Arrays(double[,] arr1, double[,] arr2)
 {
