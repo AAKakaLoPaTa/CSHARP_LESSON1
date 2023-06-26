@@ -19,6 +19,6 @@ int A(int m, int n)
     else if (n == 0) return A(m - 1, 1);
     else return (A(m - 1, A(m, n - 1)));
 }
-int m = Insert("Введите начальное натуральное число диапазона: ");
-int n = Insert("Введите конечное натуральное число диапазона: ");
+int m = Insert("Введите m для A(m,n): ");
+int n = Insert("Введите n для A(m,n): ");
 Say($"M = {m}; N = {n} -> A(m,n) = {A(m, n)}");
